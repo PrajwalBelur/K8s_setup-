@@ -12,9 +12,9 @@ Below you can find two scripts to prepare Ubuntu nodes for a kubeadm Kubernetes 
 
 Notes:
 - Run as:
-chmod +x master.sh worker.sh
-sudo ./master.sh        # on master
-sudo ./worker.sh        # on worker (paste join command when prompted)
+- chmod +x master.sh worker.sh
+- sudo ./master.sh        # on master
+- sudo ./worker.sh        # on worker - (paste join command when prompted)
 
 
 --------- master.sh ---------
