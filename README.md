@@ -1,5 +1,3 @@
-# K8s_setup-
-
 # kubeadm single-run scripts (Ubuntu)
 
 Below you can find two scripts to prepare Ubuntu nodes for a kubeadm Kubernetes cluster:
@@ -14,12 +12,14 @@ Below you can find two scripts to prepare Ubuntu nodes for a kubeadm Kubernetes 
 
 Notes:
 - Run as:
-
-- chmod +x master.sh worker.sh
+chmod +x master.sh worker.sh
 sudo ./master.sh        # on master
 sudo ./worker.sh        # on worker (paste join command when prompted)
 
+
 --------- master.sh ---------
+
+
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -84,7 +84,10 @@ sudo chown "$(id -u)":"$(id -g)" "$HOME"/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
 
 
+
 ------ worker.sh ----------
+
+
 #!/usr/bin/env bash
 set -euo pipefail
 
